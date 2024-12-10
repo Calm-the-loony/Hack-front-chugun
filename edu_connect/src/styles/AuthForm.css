@@ -1,0 +1,131 @@
+.auth-container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start;  
+    min-height: 100vh; 
+    background-color: #ffffff; 
+    margin: 0; 
+    padding: 20px 0;  
+} 
+ 
+.auth-form { 
+    background-color: #00112E; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    width: 400px;  
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    margin-top: 30px; 
+} 
+ 
+.auth-form h2 { 
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #FFE9BA; 
+} 
+ 
+.auth-form input,
+.auth-form label,
+.auth-form fieldset {
+    width: calc(100% - 10px); /* Оставляем отступ 10px справа */
+    margin-right: 10px; /* Отступ справа */
+}
+.auth-form input { 
+    padding: 7px;  
+    margin-top: 5px; 
+    border: 1px solid #ffffff; 
+    border-radius: 15px; 
+    font-size: 14px;  
+    background-color: transparent;  
+    color: #fffade; 
+} 
+ 
+.auth-form input:focus { 
+    outline: none; 
+    border-color: #fffade;  
+} 
+ 
+.auth-form fieldset { 
+    border: none; 
+    padding: 0; 
+} 
+ 
+.regButton { 
+    padding: 10px; 
+    border: 2px solid #FFE9BA;  
+    background-color: transparent;  
+    color: #FFE9BA; 
+    border-radius: 25px;  
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: all 0.3s ease; 
+} 
+ 
+.regButton:hover { 
+    background-color: #FFE9BA; 
+    color: #00112E;  
+} 
+ 
+.auth-form label { 
+    margin-top: 10px; 
+    color: #FFE9BA; 
+} 
+ 
+.checkbox-container { 
+    display: flex; 
+    align-items: center; /* Вертикальное выравнивание */ 
+    justify-content: flex-start; /* Выровнять по левому краю */ 
+    color: #ffffff; 
+    margin: 10px 0; /* Добавим немного отступа сверху и снизу */ 
+} 
+ 
+.checkbox-container input[type="checkbox"] { 
+    margin-right: 8px; /* Добавляем небольшой отступ между чекбоксом и текстом */ 
+    transform: scale(0.8); /* Сдвигаем масштаб, если нужно */ 
+} 
+ 
+.checkbox-container label { 
+    font-size: 14px; /* Подгоняем размер шрифта */ 
+    margin: 0; /* Убираем дополнительные отступы */ 
+} 
+ 
+ 
+.auth-form fieldset { 
+    border: none; 
+    padding: 0; 
+    margin: 15px 0; 
+    display: flex; 
+    justify-content: space-around;  
+    align-items: center; 
+    gap: 10px; 
+} 
+ 
+.auth-form fieldset legend { 
+    color: #FFE9BA; 
+    font-size: 16px; 
+    margin-bottom: 10px; 
+    display: block; 
+    text-align: center; 
+} 
+ 
+.auth-form fieldset label { 
+    display: flex; 
+    flex-direction: row-reverse; 
+    align-items: center; 
+    color: #FFE9BA; 
+    font-size: 14px; 
+    gap: 5px; 
+} 
+ 
+.loginButton { 
+    color: #FFFFFF; /* Белый цвет текста */ 
+    text-align: center; /* Центрирование текста */ 
+    padding: 8px 15px; /* Небольшие отступы */ 
+    text-decoration: none; /* Убираем фиолетовое подчеркивание */ 
+    border: 1px solid #FFFFFF; /* Белая граница */ 
+    border-radius: 25px; /* Скругляем углы */ 
+    cursor: pointer; /* Указатель при наведении */ 
+    transition: all 0.3s ease; /* Анимация */ 
+}
