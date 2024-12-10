@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main-page__container {
+    display: flex;
+    background-color: #00112E; /* Цвет фона */
+    height: 550px;
+    border-radius: 0% 0% 75% 75% / 0% 0% 25% 25%; /* Закругление нижней части */
+    padding: 20px;
+  }
+  
+  .main-page__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирует элементы по вертикали */
+    align-items: flex-start; /* Оставляет логотип слева */
+    width: 50%; /* Левая половина */
+  }
+  
+  .main-page__logo {
+    max-width: 450px; /* Размер логотипа */
+    height: auto; /* Поддерживает пропорции */
+    margin-bottom: 100px; /* Отступ снизу */
+  }
+  
+  .main-page__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирует элементы по вертикали */
+    align-items: center; /* Центрирует элементы по горизонтали */
+    width: 50%; /* Центральная половина */
+  }
+  
+  .main-page__title {
+    font-size: 48px; /* Увеличенный размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+    color: #FFE167; /* Яркий цвет текста */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Тень для эффекта объемности */
+    margin-bottom: 140px; /* Уменьшенный отступ снизу */
+    text-transform: uppercase; /* Приведение текста к верхнему регистру */
+    letter-spacing: 2px; /* Расширение межбуквенного интервала */
+  }
+  
+  
+  .join-button {
+    padding: 20px 40px; 
+    background-color: transparent; /* Прозрачный фон */
+    border: 1px solid #FFE9BA; /* Желтая граница */
+    color: #FFE9BA; /* Цвет текста */
+    font-size: 20px; /* Увеличенный размер шрифта */
+    border-radius: 22px; /* Больше закругление */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .join-button:hover {
+    background-color: #FFE9BA; /* Желтый фон при наведении */
+    color: #00112E; /* Цвет текста при наведении */
+    border-color: #00112E; /* Цвет границы при наведении */
+  }
+  
+  
+  .main-page__right {
+    width: 50%; /* Правая половина */
+  }
+  
+
+/* .advantages {
+	padding: 80px 87px 0 61px;
+}
+
+.advantages__wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 76px;
+	margin-top: 65px;
+}
+
+.advantages__item {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: #FFE9BA;
+	border-radius: 150px;
+}
+
+.advantages__item-2 {
+	width: 300px;
+	height: 300px;
+	background: #FFE9BA;
+	border-radius: 150px;
+}
+
+.advantages__item-3 {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: #D9D9D9;
+	border-radius: 150px;
+}
+
+.advantages__item::before {
+	content: '';
+
+	display: block;
+	width: 159px;
+	height: 158px;
+	background: #D9D9D9;
+	border-radius: 131px;
+	
+	position: absolute;
+	top: -28px;
+	left: -45px;
+
+	z-index: -1;
+
+	animation: anim 10s linear infinite;
+}
+
+.advantages__item-3::before {
+	content: '';
+
+	display: block;
+	width: 159px;
+	height: 158px;
+	background: #FFE9BA;
+	border-radius: 131px;
+	
+	position: absolute;
+	bottom: -5px;
+	right: -63px;
+
+	z-index: -1;
+
+	animation: anim 8s linear infinite;
+}
+
+.advantages__descr {
+	margin-top: 30px;
+	max-width: 300px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
+
+
+
+.history {
+	position: relative;
+	background-color: #000;
+	min-height: 700px;
+	margin-top: 215px;
+}
+
+.history::after {
+	content: '';
+
+	display: block;
+	width: 100%;
+	height: 230px;
+	background: #000;
+	border-radius: 100%;
+	
+	position: absolute;
+	top: -115px;
+
+	z-index: -1;
+}
+
+.history::before {
+	content: '';
+
+	display: block;
+	width: 100%;
+	height: 230px;
+	background: #000;
+	border-radius: 100%;
+	
+	position: absolute;
+	bottom: -115px;
+
+	z-index: -1;
+}
+
+.history__content {
+	display: flex;
+	justify-content: center;
+}
+
+.history__img {
+	display: block;
+
+	animation: jump 10s linear infinite;
+}
+
+
+
+.history__descr {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+
+	color: #FFFFFF;
+	width: 700px;
+	margin: 55px 114px 0 90px;
+}
+
+.history__descr__item {
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+.contain {
+	padding-top: 190px;
+}
+
+.contain__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 15px;
+	margin-top: 50px;
+}
+
+.contain__content {
+	background: #D9D9D9;
+	border-radius: 40px;
+	width: 413.36px;
+	height: 340px;
+}
+
+.contain__descr {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	color: #000000;
+	padding: 34px;
+}
+
+.contain__img {
+	overflow:hidden;
+	width: 413.36px;
+	height: 340px;
+	border-radius: 40px;
+}
+
+.contain__img img {
+	transition: all 1s ease-out;
+}
+
+.contain__img img:hover {
+	transform: scale(1.1);
+}
+
+.contain__img-2 {
+	overflow:hidden;
+	width: 339.09px;
+	height: 340px;
+	border-radius: 40px;
+}
+
+.contain__img-2 img {
+	transition: all 1s ease-out;
+}
+
+.contain__img-2 img:hover {
+	transform: scale(1.1);
+}
+
+.contain__img-3 {
+	overflow:hidden;
+	width: 770px;
+	height: 340px;
+	border-radius: 40px;
+}
+
+.contain__img-3 img {
+	transition: all 1s ease-out;
+}
+
+.contain__img-3 img:hover {
+	transform: scale(1.1);
+}
+
+
+
+.footer {
+	margin: 100px 0;
+}
+
+.footer__wrapper {
+	background: #FFE9BA;
+	border-radius: 40px;
+	padding: 75px 0;
+}
+
+.footer__descr {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 29px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.footer__btn {
+	display: block;
+	width: 386px;
+	height: 79px;
+
+	background-color: #D9D9D9;
+	border-radius: 40px;
+	border: none;
+
+	margin: 0 auto;
+	margin-top: 73px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	cursor: pointer;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	transition: .6s;
+}
+
+a {
+	text-decoration: none;
+}
+
+.footer__btn:hover {
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	filter: none;
+} */
