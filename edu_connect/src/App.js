@@ -6,8 +6,13 @@ import MainPage from './components/MainPage';
 import ProfilePage from './components/ProfilePage';
 import VacanciesPage from './components/VacanciesPage';
 import CoursesPage from './components/CoursesPage';
+import CourseDetails from './components/CourseDetails';
+import AdminPanel from './components/AdminPanel';
 import RegisterPage from './components/RegisterPage'; 
 import LoginPage from './components/LoginPage' 
+import ForumPage from './components/ForumPage';
+
+
 
 function App() {
   return (
@@ -22,6 +27,8 @@ function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/register" element={<RegisterPage />} /> 
           <Route path="/login" element={<LoginPage />} /> 
+          <Route path="/forum" element={<ForumPage />} /> {/* Добавляем маршрут для форума */}
+
         </Routes>
       </div>
       <Footer /> {/* Подвал будет отображаться на всех страницах */}

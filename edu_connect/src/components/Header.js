@@ -20,6 +20,9 @@ function Header() {
             <li>
               <Link to="/courses" className="header__link">курсы</Link>
             </li>
+            <li>
+              <Link to="/forum" className="header__link">форум</Link>
+            </li>
           </ul>
         </nav>
       </div>

@@ -1,0 +1,63 @@
+.admin-panel {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: #00112E;
+    color: #FFE9BA;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .admin-panel h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .admin-panel input,
+  .admin-panel textarea {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #B687F1;
+    border-radius: 5px;
+    background: #FFE9BA;
+    color: #00112E;
+  }
+  
+  .admin-panel textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .admin-panel input:focus,
+  .admin-panel textarea:focus {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 5px #FFD700;
+  }
+  
+  .admin-panel button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #FFE9BA;
+    background: #B687F1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .admin-panel button:hover {
+    background: #7B55C6;
+  }
+  
+  .admin-panel button:active {
+    background: #623DA3;
+  }
+  
