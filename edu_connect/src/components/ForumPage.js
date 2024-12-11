@@ -206,7 +206,7 @@ const ForumPage = () => {
                         value={newComment}
                         onChange={(e) => setNewComment(e.target.value)}
                     ></textarea>
-                    <button onClick={handleAddComment}>Отправить</button>
+                    <button className="b-button" onClick={handleAddComment}>Отправить</button>
                     {isModerator && (
                         <button onClick={() => handleCloseTopic(selectedTopic.id)}>
                             Закрыть тему
