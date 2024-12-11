@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../styles/CoursesPage.css';
 
 const CourseDetails = ({ course, onBack, onStart }) => {
     const [isEnrolled, setIsEnrolled] = useState(false);
