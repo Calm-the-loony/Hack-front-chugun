@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import CourseDetails from "./CourseDetails";
 import CourseTasks from "./CourseTasks";
-import AdminPanel from "./AdminPanel"; // Импорт панели администратора
+import AdminPanel from "./AdminPanel"; 
 import WebinarSection from "./WebinarSection";
 import '../styles/CoursesPage.css';
 
@@ -28,7 +28,7 @@ const CoursesPage = () => {
 
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [selectedTask, setSelectedTask] = useState(null);
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);//здесь на true менять
 
   const handleCourseClick = (course) => {
     setSelectedCourse(course);

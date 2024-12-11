@@ -11,6 +11,7 @@ button{
     cursor: pointer;
     border-radius: 5px;
     font-size: 14px;
+   
 }
 
 .add-button {
@@ -24,6 +25,19 @@ button{
     position: absolute; /* Позиционирование кнопки */
     bottom: 30px; /* Располагаем кнопку у нижнего края */
     right: 20px; /* Располагаем кнопку у левого края */
+}
+
+.b-button {
+    background-color: #B687F1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute; /* Позиционирование кнопки */
+    bottom: -93px; 
+    left: 300px; 
 }
 
 /* Стили форума */
@@ -221,3 +235,4 @@ textarea {
     color: red;
     font-weight: bold;
 }
+
