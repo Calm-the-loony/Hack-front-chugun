@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/ProfilePage.css";
+import { Link } from 'react-router-dom';
 
 const ProfilePage = () => {
   const [userData, setUserData] = useState({
@@ -141,11 +142,11 @@ const ProfilePage = () => {
                       value={newCourse}
                       onChange={(e) => setNewCourse(e.target.value)}
                     />
-                    <button onClick={handleCreateCourse}>Создать</button>
-                    <button onClick={() => setIsCreatingCourse(false)}>Отмена</button>
+                    <button className="custom-button" onClick={handleCreateCourse}>Создать</button>
+                    <button className="custom-button" onClick={() => setIsCreatingCourse(false)}>Отмена</button>
                   </div>
                 ) : (
-                  <button onClick={() => setIsCreatingCourse(true)}>Создать новый курс</button>
+                  <button className="custom-button" onClick={() => setIsCreatingCourse(true)}>Создать новый курс</button>
                 )}
               </>
             );
@@ -168,11 +169,11 @@ const ProfilePage = () => {
                       value={newWebinar}
                       onChange={(e) => setNewWebinar(e.target.value)}
                     />
-                    <button onClick={handleScheduleWebinar}>Запланировать</button>
-                    <button onClick={() => setIsSchedulingWebinar(false)}>Отмена</button>
+                    <button className="custom-button" onClick={handleScheduleWebinar}>Запланировать</button>
+                    <button className="custom-button" onClick={() => setIsSchedulingWebinar(false)}>Отмена</button>
                   </div>
                 ) : (
-                  <button onClick={() => setIsSchedulingWebinar(true)}>Запланировать новый вебинар</button>
+                  <button className="custom-button" onClick={() => setIsSchedulingWebinar(true)}>Запланировать новый вебинар</button>
                 )}
               </>
             );
@@ -208,11 +209,11 @@ const ProfilePage = () => {
                     value={newVacancy}
                     onChange={(e) => setNewVacancy(e.target.value)}
                   />
-                  <button onClick={handleCreateVacancy}>Создать</button>
-                  <button onClick={() => setIsCreatingVacancy(false)}>Отмена</button>
+                  <button className="custom-button" onClick={handleCreateVacancy}>Создать</button>
+                  <button className="custom-button" onClick={() => setIsCreatingVacancy(false)}>Отмена</button>
                 </div>
               ) : (
-                <button onClick={() => setIsCreatingVacancy(true)}>Создать новую вакансию</button>
+                <button className="custom-button" onClick={() => setIsCreatingVacancy(true)}>Создать новую вакансию</button>
               )}
             </>
           );
@@ -307,6 +308,7 @@ const ProfilePage = () => {
                   </div>
                 ))}
               </div>
+              <Link to="/courses"><button className="custom-button">Записаться на курс</button></Link>
             </>
           );
         case "responses":
