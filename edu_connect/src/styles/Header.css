@@ -7,9 +7,9 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  list-style: none; /* Убираем маркеры у списка */
-  padding: 0; /* Убираем отступы */
-  margin: 0; /* Убираем маргин */
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 .header__link {
@@ -33,6 +33,7 @@
   text-decoration: none;
   transition: all 0.7s ease-in-out;
 }
+
 
 .header__link_button {
   background: none;

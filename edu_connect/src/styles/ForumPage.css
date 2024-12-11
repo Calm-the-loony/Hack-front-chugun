@@ -22,9 +22,9 @@ button{
     cursor: pointer;
     border-radius: 5px;
     font-size: 14px;
-    position: absolute; /* Позиционирование кнопки */
-    bottom: 30px; /* Располагаем кнопку у нижнего края */
-    right: 20px; /* Располагаем кнопку у левого края */
+    position: absolute; 
+    bottom: 30px; 
+    right: 20px; 
 }
 
 .b-button {
@@ -35,7 +35,7 @@ button{
     cursor: pointer;
     border-radius: 5px;
     font-size: 14px;
-    position: absolute; /* Позиционирование кнопки */
+    position: absolute; 
     bottom: -93px; 
     left: 300px; 
 }
