@@ -61,7 +61,7 @@ const AdminPanel = ({ onAddCourse }) => {
         value={newCourse.features}
         onChange={handleInputChange}
       />
-      <button onClick={handleAddClick}>Добавить курс</button>
+      <button onClick={handleAddClick}>Добавить курс </button>
     </div>
   );
 };
