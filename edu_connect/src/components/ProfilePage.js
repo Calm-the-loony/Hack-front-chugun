@@ -284,30 +284,47 @@ const ProfilePage = () => {
               </div>
             )}
 
-            <h2>Портфолио</h2>
+            <h2>Оценки преподавателей</h2>
             <div className="portfolio-section">
-              <h3 className="portfolio-title">Оценки преподавателей</h3>
-                <div className="portfolio-grid">
-                  {[...Array(9)].map((_, index) => (
-                    <div className="portfolio-card" key={index}>
-                      <p>Карточка {index + 1}</p>
-                    </div>
-                  ))}
+              <h3 className="portfolio-title">Рекомендации</h3>
+              <div className="portfolio-grid">
+                {[
+                  { id: 1, text: "Студент имеет хорошие навыки в программировании. Рекомендуется развивать проектные навыки и работать с более сложными задачами." },
+                  { id: 2, text: "Проявляет интерес к разработке игр. Рекомендуется углубить знания в работе с игровыми движками и графическими библиотеками." },
+                  { id: 3, text: "Рекомендуется усилить навыки в программировании и тестировании для улучшения качества разработки." },
+                ].map((card) => (
+                  <div className="portfolio-card" key={card.id}>
+                    <p>{card.text}</p>
+                  </div>
+                ))}
               </div>
-          </div>
+            </div>
+
           </>
         );
         case "training":
           return (
             <>
-              <h2>Активные курсы</h2>
-              <div className="flex-container">
-                {["Курс 1", "Курс 2", "Курс 3"].map((course, index) => (
-                  <div className="rounded-card active-course-card" key={index}>
-                    {course}
-                  </div>
-                ))}
-              </div>
+             <h2>Активные курсы</h2>
+            <div className="courses-list">
+              {[
+                {
+                  title: "Основы программирования",
+                  description: "Основы программирования. Изучите основы алгоритмов, циклов и структур данных.",
+                },
+                {
+                  title: "Frontend-разработка",
+                  description: "Научитесь создавать современные веб-приложения.",
+                },
+              ].map((course, index) => (
+                <div className="course-card" key={index}>
+                  <h2>{course.title}</h2>
+                  <p>{course.description}</p>
+                </div>
+              ))}
+            </div>
+
+
               <Link to="/courses"><button className="custom-button">Записаться на курс</button></Link>
             </>
           );
@@ -315,18 +332,28 @@ const ProfilePage = () => {
           return (
             <>
               <h2>Отклики на вакансии</h2>
-              <div className="flex-container">
-                {["вакансия 1", "вакансия 2", "вакансия 3"].map((course, index) => (
-                  <div className="rounded-card active-vak-card" key={index}>
-                    {course}
-                  </div>
-                ))}
-              </div>
+            <div className="vacancies-list">
+              {["Frontend Developer", "Backend Developer", "Full Stack Developer"].map((vacancy, index) => (
+                <div className="vacancy-card" key={index}>
+                  <h2>{vacancy}</h2>
+                  <p><strong>Компания:</strong> Tech Corp</p>
+                  <p><strong>Местоположение:</strong> Москва</p>
+                  <p><strong>Тип работы:</strong> Полная занятость</p>
+                  <p><strong>Описание:</strong> Разработка и поддержка интерфейсов</p>
+                </div>
+              ))}
+            </div>
+
+              <Link to="/vacancies"><button className="custom-button">Найти вакансии</button></Link>
               <h2>Приглашения</h2>
-              <div className="flex-container">
-                {["приглашение"].map((course, index) => (
-                  <div className="rounded-card active-vak-card" key={index}>
-                    {course}
+              <div className="vacancies-list">
+                {["Приглашение на вакансию Frontend Developer"].map((invitation, index) => (
+                  <div className="vacancy-card" key={index}>
+                    <h2>{invitation}</h2>
+                    <p><strong>Компания:</strong> Tech Corp</p>
+                    <p><strong>Местоположение:</strong> Москва</p>
+                    <p><strong>Тип работы:</strong> Полная занятость</p>
+                    <p><strong>Описание:</strong> Разработка и поддержка интерфейсов.</p>
                   </div>
                 ))}
               </div>
@@ -369,7 +396,7 @@ const ProfilePage = () => {
             className={`action-button ${activeTab === "profile" ? "active" : "inactive"}`}
             onClick={() => setActiveTab("profile")}
           >
-            Профиль
+            Портфолио
           </button>
           {isTeacher ? (
             <>

@@ -1,2 +1,6 @@
 Проверка работы
 Вроде все хорошо
+
+let req = axios.post(http://localhost:8000/api/v1/auth/register, {}, {
+    "email": sdasd
+})

@@ -268,3 +268,87 @@
 .custom-button:hover {
   background-color: #9a6bd9; /* Немного темнее при наведении */
 }
+
+.vacancies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Расстояние между карточками */
+  justify-content: center;
+  justify-content: flex-start
+}
+
+.vacancy-card {
+  background-color: #00112E;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  flex: 0 1 300px; /* Фиксированная ширина карточек */
+  max-width: 250px;
+  color: #FFE9BA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto; /* Автоматическая высота, чтобы карточка могла вмещать все содержимое */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.vacancy-card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.vacancy-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Показывать не более 2 строк */
+  -webkit-box-orient: vertical;
+}
+
+.vacancy-card:hover {
+  transform: scale(1.05); /* Увеличение карточки при наведении */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #003366;
+}
+
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Расстояние между карточками */
+  justify-content: center;
+  justify-content: flex-start;
+}
+
+.course-card {
+  background-color: #00112E;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  flex: 0 1 400px; /* Ширина карточки увеличена */
+  max-width: 400px;
+  color: #FFE9BA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto; /* Автоматическая высота */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.course-card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.course-card p {
+  margin: 6px 0;
+  font-size: 16px; /* Немного увеличенный размер шрифта */
+  line-height: 1.5; /* Увеличенный интерлиньяж для улучшения читаемости */
+}

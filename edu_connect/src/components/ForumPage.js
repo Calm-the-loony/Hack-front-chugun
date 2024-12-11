@@ -208,7 +208,7 @@ const ForumPage = () => {
                     ></textarea>
                     <button className="b-button" onClick={handleAddComment}>Отправить</button>
                     {isModerator && (
-                        <button onClick={() => handleCloseTopic(selectedTopic.id)}>
+                        <button className="b-button" onClick={() => handleCloseTopic(selectedTopic.id)}>
                             Закрыть тему
                         </button>
                     )}

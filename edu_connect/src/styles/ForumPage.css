@@ -35,9 +35,10 @@ button{
     cursor: pointer;
     border-radius: 5px;
     font-size: 14px;
-    position: absolute; 
-    bottom: -93px; 
-    left: 300px; 
+    position: relative;
+    bottom: -93px;
+    left: 20px;
+    top: -15px;
 }
 
 /* Стили форума */
